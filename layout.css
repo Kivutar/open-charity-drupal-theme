@@ -1,0 +1,440 @@
+@font-face {
+  font-family: "museosans300";
+  font-style: normal;
+  font-weight: 400;
+  src: url("MuseoSansRounded300.woff") format("woff");
+}
+
+@font-face {
+  font-family: "museosans500";
+  font-style: normal;
+  font-weight: 400;
+  src: url("MuseoSans500.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  font-family: "museosans500", sans-serif;
+  font-size: 15px;
+  color: rgb(87, 86, 86);
+  background: rgb(242, 242, 242);
+}
+
+a {
+  color: rgb(93, 192, 201);
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: "museosans300", sans-serif;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.page-offset {
+  margin-top: 130px;
+}
+
+/* Top Menu */
+
+#top-menu {
+  padding: 16px 0;
+  background: white;
+  font-size: 15px;
+  font-family: "museosans500", sans-serif;
+  color: rgb(87, 86, 86);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+#top-menu img {
+  height: 35px;
+  margin-top: 7px;
+}
+
+#top-menu ul {
+  float: right;
+  list-style-type: none;
+}
+
+#top-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#top-menu a {
+  text-transform: uppercase;
+  color: rgb(87, 86, 86);
+}
+
+#top-menu li.last a,
+.button {
+  border: 1px solid rgb(97, 192, 189);
+  border-radius: 2px;
+  padding: 10px 25px;
+  color: rgb(97, 192, 189);
+  text-transform: uppercase;
+}
+
+/* Hero */
+
+#hero {
+  background-image: url('bg.jpg');
+  color: white;
+  text-align: center;
+  padding: 130px 0px 90px 0px;
+  background-size: auto 100%;
+  background-position: 50%;
+  background-attachment: fixed;
+  position: relative;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px;
+}
+
+#hero::after {
+  content: "";
+    background: rgba(30, 30, 30, 0.70);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+#hero h1 {
+  font-size: 56px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#hero .p1 {
+  max-width: 635px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#hero .p2 {
+  max-width: 635px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+/* Event */
+
+.event {
+  background: rgb(242, 242, 242);
+  color: rgb(91, 97, 114);
+  padding: 35px 0;
+}
+
+.event .content {
+  float: left;
+}
+
+.event .next {
+  color: rgb(97, 192, 189);
+}
+
+.event .date {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+
+.event .place {
+  margin: 0;
+}
+
+.event .button {
+  border: 2px solid rgb(97, 192, 189);
+  background: rgb(97, 192, 189);
+  padding: 10px 25px;
+  border-radius: 2px;
+  color: white;
+  float: right;
+  text-transform: uppercase;
+}
+
+/* Get Involved */
+
+.involved {
+  padding: 15px 0 30px 0;
+  background: white;
+}
+
+.involved h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.card {
+  width: 33%;
+  text-align: center;
+  line-height: 22px;
+  float: left;
+}
+
+.card h3 {
+  text-transform: uppercase;
+}
+
+.card img {
+  height: 100px;
+}
+
+.card .button {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+/* Main section */
+
+.main {
+  background-color: rgb(242, 242, 242);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.main h2,
+.blog h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.mission .cards {
+  margin: 0 -20px;
+}
+
+.mission .card {
+  margin-top: 100px;
+}
+
+.mission .card .content {
+  margin: 0 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.mission .card h3 {
+  color: rgb(93, 192, 201);
+  text-transform: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 14px 0;
+}
+
+.mission .card .circle {
+  background: rgb(93, 192, 201);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: -70px auto 0 auto;
+  border: solid 10px white;
+  text-align: center;
+}
+
+.mission .card img {
+  height: 40px;
+  margin: 20px auto;
+}
+
+.main hr {
+  border: none;
+  border-top: solid 1px #d9dadd;
+  margin: 50px 0;
+}
+
+.members .card {
+  width: 20%;
+  height: 100px;
+}
+
+.members .card img {
+  width: auto;
+  max-height: 100%;
+}
+
+ul.steps {
+  padding: 0;
+  margin: 35px 0 20px 0;
+}
+
+ul.steps li {
+  display: inline-block;
+  list-style-type: none;
+  width: 10px;
+  height: 10px;
+  background: #979eb2;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+ul.steps li.active {
+  background: rgb(93, 192, 201);
+}
+
+/* Blog */
+
+.blog {
+  background: #5d5e61;
+  position: relative;
+}
+
+.blog > div {
+  background: white;
+  margin: 0 auto 0 auto;
+  padding: 20px 0;
+}
+
+.blog .posts {
+  margin: 0 -20px;
+  position: relative;
+}
+
+.blog .posts .card {
+  width: 25%;
+  text-align: left;
+}
+
+.blog .posts .card .content {
+  margin: 0 20px;
+}
+
+.blog .posts .card h3 {
+  border-bottom: solid 1px rgb(242, 242, 242);
+  padding-bottom: 6px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.blog .posts .card p.date {
+  border-top: solid 1px rgb(242, 242, 242);
+  padding-top: 10px;
+}
+
+.blog .prev,
+.blog .next {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.blog .prev {
+  left: -25px;
+}
+
+.blog .next {
+  right: -25px;
+}
+
+/* Footer */
+
+footer {
+  background: #454850;
+  color: #97a0b9;
+  text-align: center;
+}
+
+footer p {
+  padding: 12px 0;
+  margin: 0;
+}
+
+footer p.social {
+  padding: 30px 0;
+  margin: 0;
+}
+
+footer hr {
+  border: none;
+  border-top: solid 1px #5d5e61;
+}
+
+footer .social a {
+  font-size: 18px;
+  margin: 8px;
+}
+
+/* Responsive */
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.blog > div {
+  width: 100%;
+  position: relative;
+}
+
+.blog .prev,
+.blog .next {
+  display: none;
+}
+
+/* Phones*/
+@media (max-width: 767px) {
+  .card,
+  .mission .card,
+  .members .card,
+  .blog .posts .card {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Wide screens */
+@media (min-width: 1250px) {
+  .container {
+    width: 1100px;
+  }
+
+  .blog {
+    height: 200px;
+    margin-top: 150px;
+  }
+
+  .blog > div {
+    width: 1250px;
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .blog .prev,
+  .blog .next {
+    display: block;
+  }
+}
+
