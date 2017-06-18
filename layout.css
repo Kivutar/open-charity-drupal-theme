@@ -301,22 +301,37 @@ h1, h2, h3 {
   max-height: 100%;
 }
 
-ul.steps {
+.view-members ul.pager {
   padding: 0;
   margin: 35px 0 20px 0;
 }
 
-ul.steps li {
+.view-members ul.pager li {
   display: inline-block;
-  list-style-type: none;
   width: 10px;
   height: 10px;
+  list-style-type: none;
   background: #979eb2;
   border-radius: 50%;
   margin: 3px;
+  padding: 0;
+  font-size: 0;
 }
 
-ul.steps li.active {
+.view-members ul.pager li a {
+  width: 10px;
+  height: 10px;
+  display: block;
+}
+
+.view-members .pager .pager-next,
+.view-members .pager .pager-previous,
+.view-members .pager .pager-first,
+.view-members .pager .pager-last {
+  display: none;
+}
+
+.view-members ul.pager li.pager-current {
   background: rgb(93, 192, 201);
 }
 
