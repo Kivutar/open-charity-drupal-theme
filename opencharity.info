@@ -10,3 +10,9 @@ version = "7.54"
 project = "drupal"
 datestamp = "1485986921"
 
+regions[header] = Header 
+regions[highlighted] = Highlighted 
+regions[help] = Help 
+regions[content] = Content 
+regions[prefooter] = Pre-Footer
+regions[footer] = Footer 

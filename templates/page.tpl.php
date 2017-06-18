@@ -141,12 +141,6 @@
   <div id="breadcrumb" class="container"><?php print $breadcrumb; ?></div>
 <?php endif; ?>
 
-<?php if ($page['sidebar_first']): ?>
-  <div id="sidebar-first" class="column sidebar"><div class="section">
-    <?php print render($page['sidebar_first']); ?>
-  </div></div> <!-- /.section, /#sidebar-first -->
-<?php endif; ?>
-
 <div class="container">
   <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
   <a id="main-content"></a>
@@ -173,45 +167,13 @@
 
 </div>
 
-<div class="blog">
-  <div>
-    <h2>Blog</h2>
-    <div class="container">
-      <div class="posts clearfix">
-        <div class="card">
-          <div class="content">
-            <h3><a href="#">Online Donations Special...</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a velit et lacus placerat facilisis auctor id magna.</p>
-            <p class="date">14 Nov 2014</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h3><a href="#">Online Donations Special...</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a velit et lacus placerat facilisis auctor id magna.</p>
-            <p class="date">14 Nov 2014</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h3><a href="#">Online Donations Special...</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a velit et lacus placerat facilisis auctor id magna.</p>
-            <p class="date">14 Nov 2014</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h3><a href="#">Online Donations Special...</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a velit et lacus placerat facilisis auctor id magna.</p>
-            <p class="date">14 Nov 2014</p>
-          </div>
-        </div>
-        <div class="prev"><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></div>
-        <div class="next"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
-      </div>
+<?php if ($page['prefooter']): ?> 
+  <div class="prefooter">
+    <div>
+      <?php print render($page['prefooter']); ?>
     </div>
   </div>
-</div>
+<?php endif; ?>
 
 <footer>
   <div class="container">

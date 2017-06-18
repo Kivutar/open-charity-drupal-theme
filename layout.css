@@ -220,7 +220,7 @@ h1, h2, h3 {
 }
 
 .main h2,
-.blog h2 {
+.prefooter h2 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 35px;
@@ -301,56 +301,56 @@ ul.steps li.active {
 
 /* Blog */
 
-.blog {
+.prefooter {
   background: #5d5e61;
   position: relative;
 }
 
-.blog > div {
+.prefooter > div {
   background: white;
   margin: 0 auto 0 auto;
   padding: 20px 0;
 }
 
-.blog .posts {
+.prefooter .view-content {
   margin: 0 -20px;
   position: relative;
 }
 
-.blog .posts .card {
+.prefooter .view-content .card {
   width: 25%;
   text-align: left;
 }
 
-.blog .posts .card .content {
+.prefooter .view-content .card .content {
   margin: 0 20px;
 }
 
-.blog .posts .card h3 {
+.prefooter .view-content .card h3 {
   border-bottom: solid 1px rgb(242, 242, 242);
   padding-bottom: 6px;
   font-size: 15px;
   text-transform: none;
 }
 
-.blog .posts .card p.date {
+.prefooter .view-content .card p.date {
   border-top: solid 1px rgb(242, 242, 242);
   padding-top: 10px;
 }
 
-.blog .prev,
-.blog .next {
+.prefooter .prev,
+.prefooter .next {
   font-size: 50px;
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
 }
 
-.blog .prev {
+.prefooter .prev {
   left: -25px;
 }
 
-.blog .next {
+.prefooter .next {
   right: -25px;
 }
 
@@ -391,13 +391,13 @@ footer .social a {
   box-sizing: border-box;
 }
 
-.blog > div {
+.prefooter > div {
   width: 100%;
   position: relative;
 }
 
-.blog .prev,
-.blog .next {
+.prefooter .prev,
+.prefooter .next {
   display: none;
 }
 
@@ -406,7 +406,7 @@ footer .social a {
   .card,
   .mission .card,
   .members .card,
-  .blog .posts .card {
+  .prefooter .posts .card {
     float: none;
     width: 100%;
     margin-bottom: 20px;
@@ -419,12 +419,12 @@ footer .social a {
     width: 1100px;
   }
 
-  .blog {
+  .prefooter {
     height: 200px;
     margin-top: 150px;
   }
 
-  .blog > div {
+  .prefooter > div {
     width: 1250px;
     bottom: 0;
     position: absolute;
@@ -432,8 +432,8 @@ footer .social a {
     transform: translate(-50%, 0);
   }
 
-  .blog .prev,
-  .blog .next {
+  .prefooter .prev,
+  .prefooter .next {
     display: block;
   }
 }
