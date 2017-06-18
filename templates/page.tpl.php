@@ -91,16 +91,10 @@
   </div>
 <?php endif; ?>
 
-<footer>
-  <div class="container">
-    <p class="social">
-      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-    </p>
-    <hr>
-    <?php if ($page['footer']): ?> 
-      <?php print render($page['footer']); ?>
-    <?php endif; ?>
-  </div>
-</footer>
+<?php if ($page['footer']): ?> 
+  <footer>
+    <div class="container">
+        <?php print render($page['footer']); ?>
+    </div>
+  </footer>
+<?php endif; ?>
