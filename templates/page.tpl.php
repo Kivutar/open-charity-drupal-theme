@@ -74,13 +74,13 @@
 
 
     <?php if ($messages): ?>
-      <div id="messages"><div class="container clearfix">
+      <div id="messages">
         <?php print $messages; ?>
-      </div></div> <!-- /.section, /#messages -->
+      </div>
     <?php endif; ?>
     
     <?php if ($breadcrumb): ?>
-      <div id="breadcrumb" class="container"><?php print $breadcrumb; ?></div>
+      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
     
     <?php print render($title_prefix); ?>
