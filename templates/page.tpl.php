@@ -33,11 +33,11 @@
 </div>
 
 <?php if ($page['highlighted']): ?>
-<div id="highlighted">
-  <div class="container clearfix">
-    <?php print render($page['highlighted']); ?>
+  <div id="highlighted">
+    <div class="container clearfix">
+      <?php print render($page['highlighted']); ?>
+    </div>
   </div>
-</div>
 <?php endif; ?>
 
 <div class="involved">
