@@ -432,8 +432,8 @@ footer .social a {
   position: relative;
 }
 
-.prefooter .prev,
-.prefooter .next {
+.prefooter .pager .pager-previous,
+.prefooter .pager .pager-next {
   display: none;
 }
 
@@ -468,8 +468,8 @@ footer .social a {
     transform: translate(-50%, 0);
   }
 
-  .prefooter .prev,
-  .prefooter .next {
+  .prefooter .pager .pager-previous,
+  .prefooter .pager .pager-next {
     display: block;
   }
 }
