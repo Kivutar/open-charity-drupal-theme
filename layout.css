@@ -180,12 +180,12 @@ h1, h2, h3 {
 
 /* Get Involved */
 
-.involved {
+#top {
   padding: 15px 0 30px 0;
   background: white;
 }
 
-.involved h2 {
+#top h2 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 35px;

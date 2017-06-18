@@ -38,35 +38,13 @@
   </div>
 <?php endif; ?>
 
-<div class="involved">
-  <h2>Get Involved</h2>
-  <div class="container clearfix">
-    <div class="card">
-      <div class="content">
-        <img alt="" src="<?php print $base_path . path_to_theme() ?>/meetup.jpg">
-        <h3>We do meetings</h3>
-        <p>We organize our meetings through the OpenCharity MeetUp&nbsp;group</p>
-        <a href="#" class="button">Meeting Group</a>
-      </div>
-    </div>
-    <div class="card">
-      <div class="content">
-        <img alt="" src="<?php print $base_path . path_to_theme() ?>/slack.jpg">
-        <h3>We communicate</h3>
-        <p>OpenCharity have a slack group for daily&nbsp;communication</p>
-        <a href="#" class="button">Slack Group</a>
-      </div>
-    </div>
-    <div class="card">
-      <div class="content">
-        <img alt="" src="<?php print $base_path . path_to_theme() ?>/google.jpg">
-        <h3>We collaborate</h3>
-        <p>We have a Wiki group set up to share tools and&nbsp;documents</p>
-        <a href="#" class="button">Wiki Group</a>
-      </div>
+<?php if ($page['top']): ?>
+  <div id="top">
+    <div class="container clearfix">
+      <?php print render($page['top']); ?>
     </div>
   </div>
-</div>
+<?php endif; ?>
 
 <div class="main">
   <div class="container">

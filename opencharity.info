@@ -13,6 +13,7 @@ datestamp = "1485986921"
 regions[header] = Header 
 regions[highlighted] = Highlighted 
 regions[help] = Help 
+regions[top] = Top
 regions[content] = Content 
 regions[prefooter] = Pre-Footer
 regions[footer] = Footer 
