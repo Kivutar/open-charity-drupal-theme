@@ -32,15 +32,13 @@
   </div>
 </div>
 
-<div class="event">
+<?php if ($page['highlighted']): ?>
+<div id="highlighted">
   <div class="container clearfix">
-    <div class="content">
-      <p class="date"><span class="next">Next event:</span> <strong>June 23<sup>rd</sup> 2016 18:30 - 21:00</strong></p>
-      <p class="place">Cancer Research UK, Angel Building, 407 St John Street, London EC1V 4AD</p>
-    </div>
-    <a class="button" href="#">Register</a>
+    <?php print render($page['highlighted']); ?>
   </div>
 </div>
+<?php endif; ?>
 
 <div class="involved">
   <h2>Get Involved</h2>
@@ -142,7 +140,6 @@
 <?php endif; ?>
 
 <div class="container">
-  <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
   <a id="main-content"></a>
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>

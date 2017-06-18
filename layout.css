@@ -143,32 +143,32 @@ h1, h2, h3 {
 
 /* Event */
 
-.event {
+#highlighted {
   background: rgb(242, 242, 242);
   color: rgb(91, 97, 114);
   padding: 35px 0;
 }
 
-.event .content {
+#highlighted .view-content .content {
   float: left;
 }
 
-.event .next {
+#highlighted .next {
   color: rgb(97, 192, 189);
 }
 
-.event .date {
+#highlighted .date {
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 4px;
   font-size: 15px;
 }
 
-.event .place {
+#highlighted .place {
   margin: 0;
 }
 
-.event .button {
+#highlighted .button {
   border: 2px solid rgb(97, 192, 189);
   background: rgb(97, 192, 189);
   padding: 10px 25px;
