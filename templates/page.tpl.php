@@ -71,8 +71,6 @@
 <div class="main">
   <div class="container">
 
-
-
     <?php if ($messages): ?>
       <div id="messages">
         <?php print $messages; ?>
@@ -104,59 +102,6 @@
     <?php print render($page['content']); ?>
     <?php print $feed_icons; ?>
 
-
-
-
-
-    <!--<div class="mission">
-      <h2>Our Mission</h2>
-      <p>Charities and Partners collaborating and sharing open solutions and ideas to create value in the digital space.</p>
-      <p><strong>If you are a charity or a supplier, we are ready to welcome you.</strong></p>
-      <div class="cards clearfix">
-        <div class="card">
-          <div class="content">
-            <div class="circle"><img alt="" src="<?php print $base_path . path_to_theme() ?>/lightbulb.png"></div>
-            <h3>We help charities</h3>
-            <p>share knowledge and working practice to make the best technology choices.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <div class="circle"><img alt="" src="<?php print $base_path . path_to_theme() ?>/together.png"></div>
-            <h3>We bring together</h3>
-            <p>charities and suppliers to the charity sector to share best practices.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <div class="circle"><img alt="" src="<?php print $base_path . path_to_theme() ?>/thumb.png"></div>
-            <h3>We encourage</h3>
-            <p>collaboration and innovation for the good of the charity sector.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="members">
-      <h2>Our Members</h2>
-
-      <div class="clearfix">
-        <div class="card"><img alt="" src="<?php print $base_path . path_to_theme() ?>/cancer.png"></div>
-        <div class="card"><img alt="" src="<?php print $base_path . path_to_theme() ?>/compucorp.png"></div>
-        <div class="card"><img alt="" src="<?php print $base_path . path_to_theme() ?>/kop.png"></div>
-        <div class="card"><img alt="" src="<?php print $base_path . path_to_theme() ?>/zing.png"></div>
-        <div class="card"><img alt="" src="<?php print $base_path . path_to_theme() ?>/comic.png"></div>
-      </div>
-
-      <ul class="steps">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-      </ul>
-
-    </div>-->
   </div>
 </div>
 
