@@ -215,8 +215,11 @@ h1, h2, h3 {
 
 .main {
   background-color: rgb(242, 242, 242);
-  text-align: center;
   padding: 20px 0;
+}
+
+.main .view {
+  text-align: center;
 }
 
 .main h2,
@@ -270,12 +273,12 @@ h1, h2, h3 {
   margin: 50px 0;
 }
 
-.members .card {
+.view-members .card {
   width: 20%;
   height: 100px;
 }
 
-.members .card img {
+.view-members .card img {
   width: auto;
   max-height: 100%;
 }
@@ -405,7 +408,7 @@ footer .social a {
 @media (max-width: 767px) {
   .card,
   .mission .card,
-  .members .card,
+  .view-members .card,
   .prefooter .view-content .card {
     float: none;
     width: 100%;

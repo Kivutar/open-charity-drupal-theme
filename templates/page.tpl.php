@@ -19,8 +19,6 @@
   </div>
 </div>
 
-<?php if (drupal_is_front_page()): ?>
-
 <div id="hero">
   <div class="container">
     <?php if ($site_slogan): ?>
@@ -73,7 +71,44 @@
 <div class="main">
   <div class="container">
 
-    <div class="mission">
+
+
+    <?php if ($messages): ?>
+      <div id="messages"><div class="container clearfix">
+        <?php print $messages; ?>
+      </div></div> <!-- /.section, /#messages -->
+    <?php endif; ?>
+    
+    <?php if ($breadcrumb): ?>
+      <div id="breadcrumb" class="container"><?php print $breadcrumb; ?></div>
+    <?php endif; ?>
+    
+    <?php print render($title_prefix); ?>
+    <?php if ($title): ?>
+      <h1 class="title" id="page-title">
+        <?php print $title; ?>
+      </h1>
+    <?php endif; ?>
+    <?php print render($title_suffix); ?>
+    <?php if ($tabs): ?>
+      <div class="tabs">
+        <?php print render($tabs); ?>
+      </div>
+    <?php endif; ?>
+    <?php print render($page['help']); ?>
+    <?php if ($action_links): ?>
+      <ul class="action-links">
+        <?php print render($action_links); ?>
+      </ul>
+    <?php endif; ?>
+    <?php print render($page['content']); ?>
+    <?php print $feed_icons; ?>
+
+
+
+
+
+    <!--<div class="mission">
       <h2>Our Mission</h2>
       <p>Charities and Partners collaborating and sharing open solutions and ideas to create value in the digital space.</p>
       <p><strong>If you are a charity or a supplier, we are ready to welcome you.</strong></p>
@@ -121,47 +156,8 @@
         <li></li>
       </ul>
 
-    </div>
+    </div>-->
   </div>
-</div>
-
-<?php else: ?>
-<div class="page-offset"></div>
-<?php endif; ?>
-
-<?php if ($messages): ?>
-  <div id="messages"><div class="container clearfix">
-    <?php print $messages; ?>
-  </div></div> <!-- /.section, /#messages -->
-<?php endif; ?>
-
-<?php if ($breadcrumb): ?>
-  <div id="breadcrumb" class="container"><?php print $breadcrumb; ?></div>
-<?php endif; ?>
-
-<div class="container">
-  <a id="main-content"></a>
-  <?php print render($title_prefix); ?>
-  <?php if ($title): ?>
-    <h1 class="title" id="page-title">
-      <?php print $title; ?>
-    </h1>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
-  <?php if ($tabs): ?>
-    <div class="tabs">
-      <?php print render($tabs); ?>
-    </div>
-  <?php endif; ?>
-  <?php print render($page['help']); ?>
-  <?php if ($action_links): ?>
-    <ul class="action-links">
-      <?php print render($action_links); ?>
-    </ul>
-  <?php endif; ?>
-  <?php print render($page['content']); ?>
-  <?php print $feed_icons; ?>
-
 </div>
 
 <?php if ($page['prefooter']): ?> 
