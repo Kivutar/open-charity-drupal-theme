@@ -46,7 +46,6 @@ h1, h2, h3 {
 /* Top Menu */
 
 #top-menu {
-  padding: 16px 0;
   background: white;
   font-size: 15px;
   font-family: "museosans500", sans-serif;
@@ -59,14 +58,20 @@ h1, h2, h3 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 
+#top-menu #logo {
+  float: left;
+  margin: 18px 0;
+}
+
 #top-menu img {
   height: 35px;
-  margin-top: 7px;
 }
 
 #top-menu ul {
   float: right;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 #top-menu li {
@@ -74,9 +79,12 @@ h1, h2, h3 {
   margin-left: 20px;
 }
 
-#top-menu a {
+#top-menu li a {
   text-transform: uppercase;
   color: rgb(87, 86, 86);
+  padding: 10px 0;
+  margin: 18px 0;
+  display: block;
 }
 
 #top-menu li.last a,
