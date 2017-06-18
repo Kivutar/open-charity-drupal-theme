@@ -20,6 +20,10 @@ body {
   background: rgb(242, 242, 242);
 }
 
+table {
+  width: 100%;
+}
+
 a {
   color: rgb(93, 192, 201);
   text-decoration: none;
@@ -135,18 +139,11 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
-#hero .p1 {
+#hero p {
   max-width: 635px;
   margin: 0 auto;
   margin-bottom: 20px;
   font-size: 18px;
-}
-
-#hero .p2 {
-  max-width: 635px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  font-size: 15px;
 }
 
 /* Event */
@@ -226,13 +223,13 @@ h1, h2, h3 {
   padding: 20px 0;
 }
 
-.main .block {
+.main .block-views {
   border-bottom: solid 1px #d9dadd;
   margin-bottom: 50px;
   padding-bottom: 50px;
 }
 
-.main .block:last-child {
+.main .block-views:last-child {
   border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
