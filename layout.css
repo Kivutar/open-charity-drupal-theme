@@ -354,21 +354,41 @@ ul.steps li.active {
   padding-top: 10px;
 }
 
-.prefooter .prev,
-.prefooter .next {
+.prefooter .pager li.pager-current {
+  display: none;
+}
+
+.prefooter .pager li.pager-next {
   font-size: 50px;
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  right: 35px;  
+  margin: 0;
+  padding: 0;
 }
 
-.prefooter .prev {
-  left: -25px;
+.prefooter .pager-next a:before {
+  font-family: FontAwesome;
+  content: "\f105";
 }
 
-.prefooter .next {
-  right: -25px;
+.prefooter .pager li.pager-previous {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 35px;  
+  margin: 0;
+  padding: 0;
 }
+
+.prefooter .pager-previous a:before {
+  font-family: FontAwesome;
+  content: "\f104";
+}
+
+.ajax-progress-throbber { display: none}
 
 /* Footer */
 
