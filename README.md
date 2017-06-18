@@ -4,7 +4,7 @@ This is a single page theme for a charity.
 
 The website is built using mainly CCK and Views.
 
-Demo: http://open-charity.kivutar.me/
+Demo: http://open-charity.kivutar.me/  
 Admin access: http://open-charity.kivutar.me/admin
 
 ## Modules
